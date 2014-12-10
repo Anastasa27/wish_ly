@@ -1,0 +1,48 @@
+<div id="content">
+  <div class="task-create">
+    <header>
+      <h1>Wish.ly</h1>
+      <h2>The Ultimate Wish List</h2>
+    </header>
+    <form>
+      <fieldset>
+        <legend>Add an Item to your Wish List</legend>
+        <label>
+          Item Name<br><input type="text" name="item" />
+        </label>
+        <br>
+        <!-- <label>
+          Item Description<br><input type="text" name="item" />
+        </label>
+        <br>
+        <label>
+          Link To Item<br><input type="text" name="item" />
+        </label>
+        <br> -->
+        <button>Save</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class="task-list">
+    <h3>Your List</h3>
+    <ul id="tasks">
+      <% @tasks.each do |task| %>
+        <li data-completed="<%= task.completed ? "true" : "false" %>" data-id="<%= task.id %>">
+          <span class="description<%= task.completed ? " completed" : "" %>">
+            <%= task.description %></span>
+          <input type="checkbox"  <%= task.completed ? "checked" : "" %>/>
+          <span class="remove">&times;</span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<script type="text/template" id="task-template">
+  <li data-completed="<%%= task.completed ? "true" : "false" %>">
+    <span class="description<%%= task.completed ? " completed" : "" %>">
+      <%%= task.description %></span>
+    <input type="checkbox"  <%%= task.completed ? "checked" : "" %>/>
+    <span class="remove">&times;</span>
+  </li>
+</script>

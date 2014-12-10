@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require normalize-rails
+ *= require_tree .
+ *= require_self
+ */
+
+body, html {
+  background-color: rgba(228,242,250,0.4);
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1 {
+  font-family: 'Norican', cursive;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 0 0 3px white;
+  color: #ee6123;
+}
+
+h2, h3 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: 0 0 3px white;
+  color: #ee6123;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+form button {
+  margin: 10px auto 0 ;
+}
+
+ul {
+  width: 440px;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+div.task-create, div.task-list {
+  padding-bottom: 30px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 10px;
+  padding: 10px 0 20px;
+}
+
+li {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+
+li span.completed {
+  text-decoration: line-through;
+}
+
+li span.description {
+  cursor: default;
+}
+
+li span.remove {
+  cursor: pointer;
+}
