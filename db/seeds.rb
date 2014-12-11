@@ -8,6 +8,6 @@
 
 Task.delete_all
 
-Task.create({ description: "Kill Renly Baratheon", completed: true })
-Task.create({ description: "Sack Winterfell" })
-Task.create({ description: "Confirm the capture of the Targaryen girl" })
+Task.create({ description: "Everlane Square zip wallet", completed: true })
+Task.create({ description: "Fragrance by Mandy Aftel" })
+Task.create({ description: "Knitty Gritty: Knitting for the Absolute Beginner" })

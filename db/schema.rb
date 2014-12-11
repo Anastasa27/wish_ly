@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20141021193634) do
 
   create_table "tasks", force: true do |t|
     t.string   "description"
+    t.string   "link"
     t.boolean  "completed",   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
