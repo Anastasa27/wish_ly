@@ -8,6 +8,6 @@
 
 Task.delete_all
 
-Task.create({ description: "Everlane Square zip wallet", completed: true })
-Task.create({ description: "Fragrance by Mandy Aftel" })
-Task.create({ description: "Knitty Gritty: Knitting for the Absolute Beginner" })
+Task.create({ description: "socks", completed: true })
+Task.create({ description: "World Peace" })
+
