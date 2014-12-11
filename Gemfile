@@ -45,3 +45,5 @@ gem 'normalize-rails'
 group :development, :test do
   gem 'rails-pry'
 end
+
+gem 'rails_12factor'
