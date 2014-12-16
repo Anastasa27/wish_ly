@@ -1,4 +1,4 @@
-## [Wish.ly](https://safe-waters-8362.herokuapp.com/tasks)
+## [Wish.ly](https://wishly.herokuapp.com)
 
 
 ####Wish.ly is an app for creating a wish list that can be shared with friends and family. Perfect for any gift-giving holiday or occasion, Wish.ly will keep track of your heart's desires. Written almost entirely in JavaScript and Ajax, Wish.ly is a lightweight client-side app with an API back-end which features a robust relational database.
